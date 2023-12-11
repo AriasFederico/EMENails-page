@@ -2,14 +2,13 @@ import './Styles-pages/Home.css'
 import { ImagesHome } from "../src/components/ImagesHome"
 import { MyTurns } from "../src/components/MyTurns"
 import { Comments } from "../src/components/Comments"
-
 import iconHome from "../src/assets/icons/icon-arrow-home.png"
+import { NavLink } from 'react-router-dom'
 
 export const Home = () => {
 
-
   return (
-    <div className="Home">
+    <div className="Home" >
         <ImagesHome/>
         <MyTurns/>
       <div>
@@ -34,7 +33,9 @@ export const Home = () => {
       </div>   
 
       <div className="btn-container">
-      <img src={iconHome} alt="" className='back-to-home-btn'/>
+        <NavLink to="/">
+          <img src={iconHome} alt="" className='back-to-home-btn' />
+        </NavLink>
       </div>
     </div>
   )

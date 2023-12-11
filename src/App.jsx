@@ -4,6 +4,7 @@ import { About } from '../pages/About'
 import { Prices } from '../pages/Prices'
 import { Turns } from '../pages/Turns'
 import { NotFound } from '../pages/NotFound'
+import { Footer } from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 
@@ -19,6 +20,8 @@ function App() {
         <Route path='/turns' element={<Turns></Turns>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>        
       </Routes>
+
+      <Footer></Footer>
 
     </>
   )
