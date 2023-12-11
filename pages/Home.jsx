@@ -2,6 +2,9 @@ import './Styles-pages/Home.css'
 import { ImagesHome } from "../src/components/ImagesHome"
 import { MyTurns } from "../src/components/MyTurns"
 import { Comments } from "../src/components/Comments"
+
+import iconHome from "../src/assets/icons/icon-arrow-home.png"
+
 export const Home = () => {
 
 
@@ -29,6 +32,10 @@ export const Home = () => {
           comment={'La verdad muy buena atencion y muy lindo lugar, recomiendo'}/>
         </div>
       </div>   
+
+      <div className="btn-container">
+      <img src={iconHome} alt="" className='back-to-home-btn'/>
+      </div>
     </div>
   )
 }

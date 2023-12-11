@@ -1,5 +1,6 @@
 .Home {
   max-width: 1024px;
+  width: 100%;
   margin: 0 auto 2rem;
 }
 
@@ -16,4 +17,25 @@
   display: flex;
   gap: .5rem;
   overflow-x: auto;
+}
+
+.btn-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-to-home-btn {
+  width: 30px;
+  animation: arrow-home 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes arrow-home {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
 }
