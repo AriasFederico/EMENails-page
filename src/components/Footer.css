@@ -9,9 +9,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1rem;
 }
 
 .flex-footer {
   display: flex;
-  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.link-footer:hover {
+  color: black;
+}
+
+
+@media (min-width:1024px) {
+  .width-footer {
+    padding: 0;
+  }
 }

@@ -8,10 +8,10 @@ export function Footer () {
     <div className="Footer">
       <div className="width-footer">
         <div className="flex-footer">
-          <NavLink to={'/'}>Atribuciones</NavLink>
-          <NavLink>Contacto</NavLink>
+          <NavLink to={'/'} className='link-footer' >Atribuciones</NavLink>
+          <NavLink className='link-footer' >Contacto</NavLink>
         </div>
-        <NavLink>Desarollado por Federico</NavLink>
+        <NavLink className='link-footer' >Desarollado por F.A</NavLink>
       </div>
     </div>
   )
