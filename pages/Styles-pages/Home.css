@@ -13,10 +13,25 @@
 }
 
 .comments-container {
-  margin: 0 .5rem;
-  display: flex;
-  gap: .5rem;
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width:none;
+  margin: 0 .5rem;
+  gap: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comments-container::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.comments-container:active {
+  cursor: grabbing;
 }
 
 .btn-container {
