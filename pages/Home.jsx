@@ -5,6 +5,7 @@ import { Comments } from "../src/components/Comments"
 import iconHome from "../src/assets/icons/icon-arrow-home.png"
 import { NavLink } from 'react-router-dom'
 
+
 export const Home = () => {
 
   return (
