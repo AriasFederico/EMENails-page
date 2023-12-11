@@ -1,0 +1,53 @@
+.Comments {
+  border: 1px solid #4732497a;
+  border-radius: 8px;
+  width: 100%;  
+  height: 210px;
+  background-color: #533955d8;
+}
+
+.Comments-item {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 100%;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.icon-user {
+  width: 30px;
+}
+
+.icon-comillas {
+  width: 40px;
+}
+
+.username {
+  color: white;
+}
+
+.user-comment {
+  font-weight: 300;
+  color: white;
+  font-style: italic;
+  padding: 0 2rem;
+  margin-bottom: .7rem;
+}
+
+
+@media (min-width:1024px) {
+  .Comments {
+    height: 230px;
+  }
+
+  .Comments-item {
+    width: 320px;
+  }
+}

@@ -1,0 +1,130 @@
+.images-diary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+  margin-bottom: .5rem;
+  height: 400px;
+}
+
+.carousel {
+  display: flex;
+  gap: .5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.diary-link-mobile {
+  background-color: #473249c9;
+  font-weight: 400;
+  padding: .2rem .7rem .3rem;
+  transition: all .2s;
+  color: white;
+}
+
+.diary-link-mobile:hover {
+  background-color: black;
+}
+
+.banner-p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  width: 250px;
+}
+
+.manicure {
+  background-image: url(../../src/assets/images/manicuria.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  grid-area: 's';
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 1rem 1.8rem 1rem;
+  gap: .5rem;
+  box-shadow: inset 0px -18px 20px 2px rgb(35 24 24 / 79%);
+}
+
+
+.feet {
+  background-image: url(../../src/assets/images/pedicuria.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 65%;
+  background-repeat: no-repeat;
+}
+
+.hair {
+  background-image: url(../../src/assets/images/peluqueria.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 65%;
+  background-repeat: no-repeat;
+}
+
+.smoothing {
+  background-image: url(../../src/assets/images/alisados.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 65%;
+  background-repeat: no-repeat;
+}
+
+.bijouterie {
+  background-image: url(../../src/assets/images/bijouterie.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 70%;
+  background-repeat: no-repeat;
+}
+
+.carousel-p {
+  font-size: 1.5rem;
+}
+
+/* ------------------------------------------------------------ */
+
+@media (min-width:1024px) {
+  .images-diary {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  .banner {
+    padding-bottom: .8rem;
+  }
+  
+  .carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 70%;
+  }
+
+  .manicure {
+    width: 50%;
+    height: 100%;
+  }
+
+  .feet,
+  .hair,
+  .smoothing,
+  .bijouterie {
+    width: 100%;
+    height: 100%;
+  }
+}
